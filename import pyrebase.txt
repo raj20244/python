@@ -1,0 +1,40 @@
+import pyrebase
+
+firebaseConfig = {
+  apiKey: "AIzaSAR-xUyoaaG-m5Q68MqkxVDoBQJ4TM",
+  authDomain: "python-2095.firebaseapp.com",
+  projectId: "python-209e5",
+  storageBucket: "python-209e5.appspot.com",
+  messagingSenderId: "43343135934",
+  appId: "1:4334313554:web:4d6d05c5040f"
+};
+firebase-pyrebase.initialize_app (firebaseConfig) auth=firebase.auth()
+
+def login():
+
+pass
+
+def signup():
+
+print("Sign up...")
+
+email = input("Enter email: ") password=input("Enter password: ")
+
+try:
+
+user = auth.create_user_with_email_and_password (email, password)
+
+except:
+
+print("Email already exists")
+
+return
+ans-input("Are you a new user? [y / n] ^ prime prime )
+
+if ans =='n' :
+
+login()
+
+elif ans == 'y':
+
+signup()
